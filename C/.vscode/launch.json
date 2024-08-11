@@ -5,7 +5,12 @@
       "name": "C/C++ Runner: Debug Session",
       "type": "lldb",
       "request": "launch",
-      "args": [],
+      "args": [
+        "nol",
+        "satu",
+        "dua",
+        "tiga"
+      ],
       "cwd": "/Users/ahmadsofyan/Workdir",
       "program": "/Users/ahmadsofyan/Workdir/build/Debug/outDebug"
     }
