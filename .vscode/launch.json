@@ -6,47 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/ahmadsofyan/Workdir/programming_language/C/tideman",
-      "program": "/Users/ahmadsofyan/Workdir/programming_language/C/tideman/build/Debug/outDebug"
-    },
-    {
-      "name": "C/C++: clang build and debug active file",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${fileDirname}/${fileBasenameNoExtension}",
-      "args": [],
-      "stopAtEntry": false,
-      "cwd": "${fileDirname}",
-      "environment": [],
-      "externalConsole": false,
-      "MIMode": "lldb",
-      "preLaunchTask": "C/C++: clang build active file"
-    },
-    {
-      "name": "C/C++: gcc build and debug active file",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${fileDirname}/${fileBasenameNoExtension}",
-      "args": [],
-      "stopAtEntry": false,
-      "cwd": "${fileDirname}",
-      "environment": [],
-      "externalConsole": false,
-      "MIMode": "lldb",
-      "preLaunchTask": "C/C++: gcc build active file"
-    },
-    {
-      "name": "C/C++: gcc-13 build and debug active file",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${fileDirname}/${fileBasenameNoExtension}",
-      "args": [],
-      "stopAtEntry": false,
-      "cwd": "${fileDirname}",
-      "environment": [],
-      "externalConsole": false,
-      "MIMode": "lldb",
-      "preLaunchTask": "C/C++: gcc-13 build active file"
+      "cwd": "/Users/ahmadsofyan/Workdir/programming_language/C",
+      "program": "/Users/ahmadsofyan/Workdir/programming_language/C/build/Debug/outDebug"
     }
   ]
 }
