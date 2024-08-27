@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/ahmadsofyan/Workdir/programming_language/C",
-      "program": "/Users/ahmadsofyan/Workdir/programming_language/C/build/Debug/outDebug"
+      "cwd": "/Users/ahmadsofyan/Workdir/programming_language/Training",
+      "program": "/Users/ahmadsofyan/Workdir/programming_language/Training/build/Debug/outDebug"
     }
   ]
 }
