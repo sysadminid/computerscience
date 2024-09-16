@@ -1,0 +1,319 @@
+html, body {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 12px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.text-container {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.some-text {
+    line-height: 1.5;
+    word-wrap: break-word;
+    display: inline;
+}
+
+.blinking-cursor {
+    color: #00c72e;
+    animation: blink 0.7s infinite;
+    display: inline;
+    vertical-align: bottom;
+    margin-left: 2px;
+}
+
+
+.search-form .btn:hover {
+    background-color: rgba(0, 255, 60, 0.3);
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: #fff;
+    position: absolute;
+    padding: 20px;
+}
+
+.nav-link {
+    border-radius: 8px;
+    color: #ffffff;
+    margin-top: 10px;
+    padding: 4px 6px;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 255, 60, 0.5);
+    color: #ffffff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.form-control {
+    background-color: transparent;
+    font-size: 0.875rem;
+}
+
+.form-control:focus {
+    border: 1px solid #00c72e
+}
+
+.search-form {
+    display: flex;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 4px 6px;
+}
+
+/* Styles for mobile screens */
+@media (max-width: 992px) {
+    .navbar-toggler {
+        margin-right: auto;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        left: 41%;
+        right: 50%;
+        margin-top: 20px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        z-index: 1050;
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+    }
+
+    .search-form {
+        display: none;
+    }
+}
+
+/* Styles for desktop screens */
+@media (min-width: 992px) {
+    .navbar-brand {
+        position: absolute;
+        margin-top: 10px;
+    }
+
+    .navbar-nav {
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateX(30%);
+    }
+
+    .nav-link {
+        border-radius: 8px;
+        color: #ffffff;
+        margin-top: 10px;
+        padding: 4px 6px;
+        transform: translateX(-50%);
+        width: 100px;
+    }
+
+    .form-control {
+        color: #000;
+        font-size: 0.875rem;
+    }
+    
+    .search-form {
+        max-width: 200px
+    }
+    
+}
+
+/* Center navigation links (Home, Link, Disabled) */
+.nav-links {
+    justify-content: center;
+}
+
+/* Custom alignment for nav-links */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* Fix the search input text color on mobile and desktop */
+.search-form .form-control {
+    color: #fff;
+    background-color: transparent;
+}
+
+.search-form input::placeholder {
+    color: #fff;
+}
+
+.search-form button {
+    border-color: #ffffff;
+    font-size: 10px;
+}
+
+
+.sidebar-grid {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "neural-particles"
+        "bottom-section";
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+}
+
+.header {
+    grid-area: header;
+    background-color: #000000;
+    text-align: center;
+    color: white;
+}
+
+.main-neural-animation {
+    background-color: #000;
+    grid-area: neural-particles;
+    position: relative;
+}
+
+#neural-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bottom-section {
+    grid-area: bottom-section;
+    background-color: #000;
+    padding-bottom: 24px;
+    text-align: center;
+    color: white;
+}
+
+.bottom-section a.button-link {
+    display: inline-block;
+    border-radius: 8px;
+    padding: 4px 6px;
+    color: #00c72e;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Profile Picture and About Section */
+.about-section {
+    padding: 50px 0;
+    color: #fff;
+    background-color: #000;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-me {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #040505;
+}
+
+/* Particles background */
+#about-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Overlay for about-content */
+.about-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 2%);
+    z-index: 2;
+    max-width: 900px;
+    width: 90%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.61);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.25);
+    overflow-y: auto;
+}
+
+.about-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.about-content::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Profile image */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.bio {
+    font-size: 10px;
+    font-weight: 300;
+    color: #bfbfbf;
+    margin-bottom: 20px;
+}
+
+.background-story {
+    text-align: justify;
+}
+
+.get-int-touch-btn {
+    padding-top: 5px;
+    color: rgba(0, 199, 46, 0.25);
+}
+
+.get-int-touch-btn:hover {
+    padding-top: 5px;
+    color: rgba(0, 199, 46, 1);
+}

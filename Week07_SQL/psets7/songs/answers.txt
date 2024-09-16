@@ -1,0 +1,59 @@
+1.  Characterizing the audio aura
+    To characterize the audio aura, I can focus on the audio features provided in the songs table, particularly:
+    - danceability
+    - energy
+    - valence
+    - tempo
+    - loudness
+
+    Then, I could use to get average values for these features using SQL query:
+
+    ```
+    SELECT
+    AVG(danceability) as avg_danceability,
+    AVG(energy) as avg_energy,
+    AVG(valence) as avg_valence,
+    AVG(tempo) as avg_tempo,
+    AVG(loudness) as avg_loudness
+    FROM songs;
+    ```
+
+    Based on the results, I could characterize the listener's audio aura as follows:
+    - If `avg_danceability` is high (> 0.7), the listener enjoys rhythmic, danceable music.
+    - If `avg_energy` is high (> 0.7), they prefer energetic, intense tracks.
+    - If `avg_valence` is high (> 0.7), their music taste leans towards positive, happy songs.
+    - The `avg_tempo` can indicate if they prefer faster or slower music.
+    - The `avg_loudness` can suggest if they like louder or quieter tracks.
+
+    I could also look at the most common keys and the distribution of speechiness to further refine our understanding of their preferences.
+
+
+2.  Hypothesize about why the way I've calculated this aura might not be very representative of the listener.
+    This method of calculating the audio aura might not be very representative of the listener for several reasons:
+    - Averaging can mask diversity
+      We might miss the fact that the listener enjoys a wide variety of music, for example the listener might like both very energetic and very calm songs.\
+
+    - Lack of genre consideration
+      The current analysis doesn't take into account the genres or styles of music, which could be crucial to understanding the listener's preferences.
+
+    - Ignoring artist information
+      In this way, I'm not using the artists table, which could provide valuable insights into the listener's preferred artists or types of artists.
+
+    - Equal weighting
+      This method assumes all songs are equally important, but the top songs might be more representative of the listener's taste than those lower in the list.
+
+    Better ways of calculating the audio aura:
+    1.  Weighted Averages
+        Give more weight to higher-ranked songs in the calculations.
+
+    2.  Clustering
+        Use a clustering algorithm (like K-means) on the audio features to identify distinct groups of songs, which could represent different moods or contexts the listener enjoys.
+
+    3.  Artists Diversity
+        Analyze how many unique artists are in the top 100 to gauge whether the listener prefers a wide variety of artists or tends to focus on a few favorites.
+
+    4. Feature Correlation
+        Look at correlations between features like energy and tempo to identify patterns in the listener's preferences.
+
+    5.  Mood Mapping
+        Create a "mood map" based on combinations of feature, for example high energy + high valence could indicate "happy and energetic" songs.
