@@ -1,11 +1,11 @@
 # Compares two strings
 
 # Get two strings
-s = input("s: ")
-t = input("t: ")
+s = input('s: ')
+t = input('t: ')
 
 # Compare strings
 if s == t:
-    print("Same")
+    print('Same')
 else:
-    print("Different")
+    print('Different')

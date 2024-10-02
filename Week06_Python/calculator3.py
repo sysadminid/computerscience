@@ -1,11 +1,11 @@
 # Floating-point imprecision
 
 # Prompt user for x
-x = int(input("x: "))
+x = int(input('x: '))
 
 # Prompt user for y
-y = int(input("y: "))
+y = int(input('y: '))
 
 # Divide x by y
 z = x / y
-print(f"{z:.5f}")
+print(f'{z:.5f}')

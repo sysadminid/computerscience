@@ -1,5 +1,5 @@
 # Uppercases string all at once
 
-before = input("Before: ")
+before = input('Before: ')
 after = before.upper()
-print(f"After: {after}")
+print(f'After: {after}')

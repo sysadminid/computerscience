@@ -2,5 +2,5 @@
 
 i = 0
 while i < 3:
-    print("meow")
+    print('meow')
     i += 1
